@@ -139,6 +139,5 @@ class DatabaseSeeder extends Seeder
         SystemSetting::query()->updateOrCreate(['key' => 'currency'], ['value' => 'USD']);
         SystemSetting::query()->updateOrCreate(['key' => 'support_email'], ['value' => 'support@marketplace.test']);
 
-        unset($admin);
     }
 }
